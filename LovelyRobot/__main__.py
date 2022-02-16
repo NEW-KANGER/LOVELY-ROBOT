@@ -79,10 +79,10 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-LovelyRobot_IMG = "https://telegra.ph/file/a09bb2525c64301d31990.jpg"
+LovelyRobot_IMG = "https://telegra.ph/file/8af2fc538ebe1978e348f.jpg"
 
 PM_START_TEXT = """
-➪ [🌈](https://telegra.ph/file/a09bb2525c64301d31990.jpg) ' ☞ ✰Hello... Friends ─ 「[{}]」
+➪ [🌈](https://telegra.ph/file/8af2fc538ebe1978e348f.jpg) ' ☞ ✰Hello... Friends ─ 「[{}]」
 ➪ *I'Am An Advance group management bot*
 ➪ *Am Very Fast Awesome Features* 
 ───────────────────────
@@ -94,8 +94,8 @@ PM_START_TEXT = """
 buttons = [
     [
                         InlineKeyboardButton(
-                            text="Add Lovely To Your Group",
-                            url="t.me/Lovely_Ro_bot?startgroup=true"),
+                            text="Add Cherry To Your Group",
+                            url="t.me/Cherrys_Robot?startgroup=true"),
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
@@ -105,11 +105,11 @@ buttons = [
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="🚑 Support",
-                             url="https://t.me/Blaze_support"),
+                             text="♥️OUR GROUP",
+                             url="https://t.me/kannada_chattings_group"),
                        InlineKeyboardButton(
-                             text="Updates 📢",
-                             url="https://t.me/the_Blaze_Network")
+                             text="👩‍🦯 OWNER",
+                             url="https://t.me/MISS_DRUNKEN")
     
                      ], 
     ]
@@ -124,8 +124,7 @@ HELP_STRINGS = """
 
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- @Log_afk 💕"""
+DONATE_STRING = """Noo Need Am Rich"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -241,12 +240,12 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            LovelyRobot_IMG, caption= "Heya, Lovely Robot Here.. How can ! I help you?🙂\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            LovelyRobot_IMG, caption= "Heya, Cheery Here.. How can ! I help you?🙂\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⛦ Support ⛦", url="t.me/UNIQUE_SOCIETY")]]
+                [[InlineKeyboardButton(text="⛦ SUPPORT ⛦", url="t.me/kannada_chattings_group")]]
             ),
         )
 
@@ -381,7 +380,7 @@ def LovelyRobot_about_callback(update, context):
     if query.data == "LovelyRobot_":
         query.message.edit_text(
             text="""➪ A ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ
-            \n➪ Here's the basic help regarding use of Lovely Robot.
+            \n➪ Here's the basic help regarding use of Cherry.
             
             \n➪ Almost all modules usage defined in the help menu, checkout by sending `/help`
             \n➪ Report error/bugs click the Button""",
@@ -391,10 +390,10 @@ def LovelyRobot_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🚑 Support", url="t.me/Blaze_Support"
+                            text="🚑 Support", url="t.me/kannada_chattings_group"
                         ),
                         InlineKeyboardButton(
-                            text="Updates 📢", url="t.me/the_Blaze_Network"
+                            text="Owner👩‍🦯", url="t.me/MISS_DRUNKEN"
                         ),
                     ],
                     [InlineKeyboardButton(text="⛦ Back ⛦", callback_data="LovelyRobot_back")],
@@ -420,7 +419,7 @@ def LovelyRobot_about_callback(update, context):
             text=f"*➪ Here's basic Help regarding* *How to use Me?*"
             f"\n\n➪ Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n➪ After adding promote me manually with full rights for faster experience.\n"
-            f"\n➪ Than send `/admincache @Lovely_Ro_bot` in that chat to refresh admin list in My database.\n"
+            f"\n➪ Than send `/admincache @Cherrys_Robot` in that chat to refresh admin list in My database.\n"
             f"\n\n*➪All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -445,7 +444,7 @@ def LovelyRobot_about_callback(update, context):
     elif query.data == "LovelyRobot_admin":
         query.message.edit_text(
             text=f"*⛦➪ Let's make your group bit effective now*"
-            f"\n➪ Congragulations, ⛦ Lovely ⛦ now ready to manage your group."
+            f"\n➪ Congragulations, ⛦ Cherry ⛦ now ready to manage your group."
             f"\n\n➪ *Admin Tools*"
             f"\n➪ Basic Admin tools help you to protect and powerup your group."
             f"\n➪ You can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -472,18 +471,18 @@ def LovelyRobot_about_callback(update, context):
         )
     elif query.data == "LovelyRobot_support":
         query.message.edit_text(
-            text="* ⛦ Lovely support chats ⛦ *"
-            "\n➪ Join Support Group/Channel",
+            text="* ⛦ Cherrys support chats ⛦ *"
+            "\n➪ Join Support Group",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="⛦ Harsh sHukla ⛦", url="t.me/log_afk"),
-                    InlineKeyboardButton(text="⛦ Chichat ⛦", url="t.me/UNIQUE_SOCIETY"),
+                    InlineKeyboardButton(text="⛦ SHrUtHi ⛦", url="t.me/MISS_DRUNKEN"),
+                    InlineKeyboardButton(text="⛦ Cherry ⛦", url="t.me/robert160298"),
                  ],
                  [
-                    InlineKeyboardButton(text="🚑 Support", url="https://t.me/Blaze_Support"),
-                    InlineKeyboardButton(text="Updates 📢", url="https://t.me/the_Blaze_Network"),
+                    InlineKeyboardButton(text="⛦ Support ⛦", url="https://t.me/kannada_chattings_group"),
+                    InlineKeyboardButton(text="⛦ chitchat ⛦", url="https://t.me/kannada_chattings_group"),
                  ],
                  [
                     InlineKeyboardButton(text="⛦ Back ⛦", callback_data="LovelyRobot_basichelp"),
@@ -501,12 +500,12 @@ def LovelyRobot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="⛦ Harsh Pandit", url="https://t.me/harsh_Pandit_xd"),
-                    InlineKeyboardButton(text="Evil Boy ⛦", url="https://t.me/EVIL_xd_boy"),
+                    InlineKeyboardButton(text="⛦ SHrUtHi", url="https://t.me/MISS_DRUNKEN"),
+                    InlineKeyboardButton(text="Cherry ⛦", url="https://t.me/robert160298 "),
                  ],
                  [
-                    InlineKeyboardButton(text="⛦ Andy Pandit", url="https://t.me/Its_pandit_boy"),
-                    InlineKeyboardButton(text="Yash Thakur ⛦", url="https://t.me/Yash_thakuur"),                
+                    InlineKeyboardButton(text="⛦ ➳ᴹᴿ᭄ᠻꫀꪖ𝘳ꪶꫀ𝘴𝘴—͟͞𖣘", url="https://t.me/KA06_FEARLESS"),
+                    InlineKeyboardButton(text="Group ⛦", url="https://t.me/kannada_chattings_group"),                
                  ],
                  [
                     InlineKeyboardButton(text="⛦ Back ⛦", callback_data="LovelyRobot_"),
@@ -519,8 +518,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""⛦➪ Hi..🙂 I'm *LovelyRobot*
-                 \n➪ Here is the [⛦ Source Code ⛦](https://github.com/Official-afk-xD/Lovely-Robot) .""",
+            text="""⛦➪ Hi..🙂 I'm *Cherry *
+                 \n➪ Here is the [⛦ Source Code ⛦](https://t.me/Nikal_Nalle) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -773,7 +772,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 2091736526 and DONATION_LINK:
+        if OWNER_ID != 2107730173 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
