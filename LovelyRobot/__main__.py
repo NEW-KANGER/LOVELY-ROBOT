@@ -79,10 +79,10 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-LovelyRobot_IMG = "https://telegra.ph/file/8af2fc538ebe1978e348f.jpg"
+LovelyRobot_IMG = "https://telegra.ph/file/48925459666cdd4ccb16a.jpg"
 
 PM_START_TEXT = """
-➪ [🌈](https://telegra.ph/file/8af2fc538ebe1978e348f.jpg) ' ☞ ✰Hello... Friends ─ 「[{}]」
+➪ [🌈](https://telegra.ph/file/48925459666cdd4ccb16a.jpg) ' ☞ ✰Hello... Friends ─ 「[{}]」
 ➪ *I'Am An Advance group management bot*
 ➪ *Am Very Fast Awesome Features* 
 ───────────────────────
@@ -240,7 +240,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            LovelyRobot_IMG, caption= "Heya, Cheery Here.. How can ! I help you?🙂\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            LovelyRobot_IMG, caption= "Heya, Cherry Here.. How can ! I help you?🙂\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
